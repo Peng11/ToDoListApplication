@@ -31,24 +31,7 @@ namespace ToDoListMvcApplication.Controllers
 
             return View(model);
         }
-
-        [HttpPost]
-        public async Task<IActionResult> Login(string userName, string password)
-        {
-            var command = new CreateToDoCommand();
-
-            await _endpointInstance.Send(command).ConfigureAwait(false);
-
-            var user = await _userService.UserLogIn(userName, password);
-            
-            if (user == null)
-                return RedirectToAction("Index");
-
-            TempData["UserName"] = user.UserName;
-
-            return RedirectToAction("ToDoList", new { userId = user.Id });
-        }
-
+        
         [HttpGet]
         public async Task<IActionResult> ToDoList(int userId)
         {
