@@ -13,7 +13,5 @@ namespace ToDoListApplication.Data.Repositories
         Task Update(ToDoEntity todo);
 
         Task Delete(Guid todoId);
-
-        Task<ToDoEntity> Complete(Guid todoId);
     }
 }

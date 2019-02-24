@@ -16,15 +16,6 @@ namespace ToDoListApplication.Data.Repositories
             return todo;
         }
 
-        public async Task<ToDoEntity> Complete(Guid todoId)
-        {
-            var todo = await Task.Run(() => ToDoDbContext.ToDosSet.FirstOrDefault(x => x.Id == todoId));
-
-            todo.IsCompleted = true;
-                        
-            return todo;
-        }
-
         public async Task Delete(Guid todoId)
         {
             await Task.Run(() => ToDoDbContext.ToDosSet.RemoveAll(x => x.Id == todoId));
