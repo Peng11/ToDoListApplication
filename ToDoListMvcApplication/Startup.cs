@@ -1,12 +1,10 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using NServiceBus;
-using System.Threading.Tasks;
 using ToDoListApplication.Contract;
 using ToDoListApplication.Data.Repositories;
 using ToDoListApplication.Services;
@@ -34,7 +32,6 @@ namespace ToDoListMvcApplication
 
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IToDoService, ToDoService>();
-            //services.AddScoped<IToDoRepository, ToDoRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
 
             var endpointConfiguration = new EndpointConfiguration("Sample.Core");
@@ -52,17 +49,6 @@ namespace ToDoListMvcApplication
 
             _endpointInstance = Endpoint.Start(endpointConfiguration).GetAwaiter().GetResult();
 
-            
-            
-
-            
-            
-            //services.Configure<CookiePolicyOptions>(options =>
-            //{
-            //    options.CheckConsentNeeded = context => true;
-            //    options.MinimumSameSitePolicy = SameSiteMode.None;
-            //});
-            
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -80,24 +66,6 @@ namespace ToDoListMvcApplication
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
-
-           // app.Run(
-           //handler: context =>
-           //{
-           //    if (context.Request.Path != "/")
-           //    {
-           //        // only handle requests at the root
-           //        return Task.CompletedTask;
-           //    }
-           //    var applicationServices = app.ApplicationServices;
-           //    var endpointInstance = applicationServices.GetService<IEndpointInstance>();
-           //    var myMessage = new CompleteToDoCommand();
-
-           //    return Task.WhenAll(
-           //        endpointInstance.SendLocal(myMessage),
-           //        context.Response.WriteAsync("Message sent"));
-           //});
-
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
