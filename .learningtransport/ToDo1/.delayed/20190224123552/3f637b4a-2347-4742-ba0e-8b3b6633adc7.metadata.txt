@@ -1,0 +1,16 @@
+{
+  "NServiceBus.MessageId": "567ccbdb-1597-4d2c-89b8-a9fe00cf8ddf",
+  "NServiceBus.MessageIntent": "Send",
+  "NServiceBus.ConversationId": "5242353c-91c2-432f-8708-a9fe00cf8de4",
+  "NServiceBus.CorrelationId": "567ccbdb-1597-4d2c-89b8-a9fe00cf8ddf",
+  "NServiceBus.OriginatingMachine": "CUBIC-1132",
+  "NServiceBus.OriginatingEndpoint": "ToDo1",
+  "$.diagnostics.originating.hostid": "571d309684d00920aab6d6cbc4b964b1",
+  "NServiceBus.ReplyToAddress": "ToDo1",
+  "NServiceBus.ContentType": "text\/xml",
+  "NServiceBus.EnclosedMessageTypes": "ToDoListApplication.Contract.AddToDoCommand, ToDoListApplication.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "NServiceBus.Version": "7.1.6",
+  "NServiceBus.TimeSent": "2019-02-24 12:35:40:968636 Z",
+  "NServiceBus.Retries": "1",
+  "NServiceBus.Retries.Timestamp": "2019-02-24 12:35:41:547805 Z"
+}

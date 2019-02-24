@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NServiceBus" Version="7.1.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ToDoListApplication.Contract\ToDoListApplication.Messages.csproj" />
+    <ProjectReference Include="..\ToDoListApplication.Data\ToDoListApplication.Data.csproj" />
+  </ItemGroup>
+
+</Project>

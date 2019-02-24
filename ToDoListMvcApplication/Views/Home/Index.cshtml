@@ -1,0 +1,25 @@
+﻿@model ToDoListMvcApplication.Models.LoginViewModel
+
+@{
+    ViewData["Title"] = "LogIn";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@using (Html.BeginForm("ToDoList", "Home", FormMethod.Post))
+{
+<table>
+    <tr>
+        <td style="padding:10px">@Html.DisplayNameFor(Model => Model.UserName)</td>
+        <td>@Html.EditorFor(Model => Model.UserName)</td>
+    </tr>
+    <tr>
+        <td style="padding:10px">@Html.DisplayNameFor(Model => Model.Password)</td>
+        <td>@Html.EditorFor(Model => Model.Password)</td>
+    </tr>
+    <tr>
+        <td><input type="submit" value="Login" id="btnLogin" /></td>
+        <td></td>
+    </tr>
+</table>
+}

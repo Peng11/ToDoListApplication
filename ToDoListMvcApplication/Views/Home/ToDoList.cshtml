@@ -1,0 +1,73 @@
+﻿@model ToDoListMvcApplication.Models.UserViewModel
+
+@{
+    ViewData["Title"] = "ToDoList";
+}
+
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewBag.UserInformation</h3>
+
+@Html.ActionLink("Add", "Add", "Todo", new { userId = Model.UserId })
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.HiddenFor(Model => Model.ToDo.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(Model => Model.ToDo.IsCompleted)
+            </th>
+            <th>
+                @Html.DisplayNameFor(Model => Model.ToDo.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(Model => Model.ToDo.DateTimeCreated)
+            </th>
+            <th>
+                @Html.DisplayNameFor(Model => Model.ToDo.DateTimeCompleted)
+            </th>
+            <th>
+                Actions
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ToDos)
+        {
+            <tr>
+                <td>
+                    @Html.HiddenFor(modelItem => item.Id)
+                    @Html.HiddenFor(modelItem => item.UserId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsCompleted)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateTimeCreated)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateTimeCompleted)
+                </td>
+                <td>
+                    @Html.ActionLink("Update/View", "Update", "ToDo", new {  Id = item.Id, UserId = item.UserId, Title = item.Title, Description = item.Description, IsCompleted = item.IsCompleted }) |
+                    @Html.ActionLink("Delete", "Delete", "ToDo", new { Id = item.Id, UserId = item.UserId })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script>
+    $(document).ready(function () {
+        $('a:contains("Delete")').click(function (e) {
+            e.preventDefault;
+
+            confirm("Are you sure to delete the task?");
+        });
+    });
+</script>
+

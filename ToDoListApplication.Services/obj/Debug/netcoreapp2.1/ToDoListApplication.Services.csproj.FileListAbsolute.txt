@@ -1,0 +1,14 @@
+C:\Users\PengG\Documents\Visual Studio 2017\Projects\ToDoListMvcApplication\ToDoListApplication.Services\bin\Debug\netcoreapp2.1\ToDoListApplication.Services.deps.json
+C:\Users\PengG\Documents\Visual Studio 2017\Projects\ToDoListMvcApplication\ToDoListApplication.Services\bin\Debug\netcoreapp2.1\ToDoListApplication.Services.dll
+C:\Users\PengG\Documents\Visual Studio 2017\Projects\ToDoListMvcApplication\ToDoListApplication.Services\bin\Debug\netcoreapp2.1\ToDoListApplication.Services.pdb
+C:\Users\PengG\Documents\Visual Studio 2017\Projects\ToDoListMvcApplication\ToDoListApplication.Services\bin\Debug\netcoreapp2.1\ToDoListApplication.Data.dll
+C:\Users\PengG\Documents\Visual Studio 2017\Projects\ToDoListMvcApplication\ToDoListApplication.Services\bin\Debug\netcoreapp2.1\ToDoListApplication.Data.pdb
+C:\Users\PengG\Documents\Visual Studio 2017\Projects\ToDoListMvcApplication\ToDoListApplication.Services\obj\Debug\netcoreapp2.1\ToDoListApplication.Services.csprojAssemblyReference.cache
+C:\Users\PengG\Documents\Visual Studio 2017\Projects\ToDoListMvcApplication\ToDoListApplication.Services\obj\Debug\netcoreapp2.1\ToDoListApplication.Services.csproj.CoreCompileInputs.cache
+C:\Users\PengG\Documents\Visual Studio 2017\Projects\ToDoListMvcApplication\ToDoListApplication.Services\obj\Debug\netcoreapp2.1\ToDoListApplication.Services.AssemblyInfoInputs.cache
+C:\Users\PengG\Documents\Visual Studio 2017\Projects\ToDoListMvcApplication\ToDoListApplication.Services\obj\Debug\netcoreapp2.1\ToDoListApplication.Services.AssemblyInfo.cs
+C:\Users\PengG\Documents\Visual Studio 2017\Projects\ToDoListMvcApplication\ToDoListApplication.Services\obj\Debug\netcoreapp2.1\ToDoListApplication.Services.csproj.CopyComplete
+C:\Users\PengG\Documents\Visual Studio 2017\Projects\ToDoListMvcApplication\ToDoListApplication.Services\obj\Debug\netcoreapp2.1\ToDoListApplication.Services.dll
+C:\Users\PengG\Documents\Visual Studio 2017\Projects\ToDoListMvcApplication\ToDoListApplication.Services\obj\Debug\netcoreapp2.1\ToDoListApplication.Services.pdb
+C:\Users\PengG\Documents\Visual Studio 2017\Projects\ToDoListMvcApplication\ToDoListApplication.Services\bin\Debug\netcoreapp2.1\ToDoListApplication.Messages.dll
+C:\Users\PengG\Documents\Visual Studio 2017\Projects\ToDoListMvcApplication\ToDoListApplication.Services\bin\Debug\netcoreapp2.1\ToDoListApplication.Messages.pdb

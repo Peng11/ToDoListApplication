@@ -1,0 +1,30 @@
+﻿@model ToDoListMvcApplication.Models.ToDoViewModel
+
+@{
+    ViewData["Title"] = "ToDo";
+}
+
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewBag.UserInformation</h3>
+
+@using (Html.BeginForm("Add", "ToDo", FormMethod.Post))
+{
+<table>
+    <tr>
+        <td>@Html.HiddenFor(Model => Model.UserId)</td>
+        <td><br /></td>
+    </tr>
+    <tr>
+        <td style="padding:10px">@Html.DisplayNameFor(Model => Model.Title)</td>
+        <td>@Html.EditorFor(Model => Model.Title)</td>
+    </tr>
+    <tr>
+        <td style="padding:10px">@Html.DisplayNameFor(Model => Model.Description)</td>
+        <td>@Html.EditorFor(Model => Model.Description)</td>
+    </tr>
+    <tr>
+        <td><input type="submit" value="Save" id="btnSave" /></td>
+        <td>@Html.ActionLink("Cancel", "ToDoList", "Home", new { userId = Model.UserId })</td>
+    </tr>
+</table>
+}

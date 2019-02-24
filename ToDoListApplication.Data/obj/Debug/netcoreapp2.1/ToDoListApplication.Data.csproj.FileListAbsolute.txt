@@ -1,0 +1,9 @@
+C:\Users\PengG\Documents\Visual Studio 2017\Projects\ToDoListMvcApplication\ToDoListApplication.Data\bin\Debug\netcoreapp2.1\ToDoListApplication.Data.deps.json
+C:\Users\PengG\Documents\Visual Studio 2017\Projects\ToDoListMvcApplication\ToDoListApplication.Data\bin\Debug\netcoreapp2.1\ToDoListApplication.Data.dll
+C:\Users\PengG\Documents\Visual Studio 2017\Projects\ToDoListMvcApplication\ToDoListApplication.Data\bin\Debug\netcoreapp2.1\ToDoListApplication.Data.pdb
+C:\Users\PengG\Documents\Visual Studio 2017\Projects\ToDoListMvcApplication\ToDoListApplication.Data\obj\Debug\netcoreapp2.1\ToDoListApplication.Data.csproj.CoreCompileInputs.cache
+C:\Users\PengG\Documents\Visual Studio 2017\Projects\ToDoListMvcApplication\ToDoListApplication.Data\obj\Debug\netcoreapp2.1\ToDoListApplication.Data.AssemblyInfoInputs.cache
+C:\Users\PengG\Documents\Visual Studio 2017\Projects\ToDoListMvcApplication\ToDoListApplication.Data\obj\Debug\netcoreapp2.1\ToDoListApplication.Data.AssemblyInfo.cs
+C:\Users\PengG\Documents\Visual Studio 2017\Projects\ToDoListMvcApplication\ToDoListApplication.Data\obj\Debug\netcoreapp2.1\ToDoListApplication.Data.dll
+C:\Users\PengG\Documents\Visual Studio 2017\Projects\ToDoListMvcApplication\ToDoListApplication.Data\obj\Debug\netcoreapp2.1\ToDoListApplication.Data.pdb
+C:\Users\PengG\Documents\Visual Studio 2017\Projects\ToDoListMvcApplication\ToDoListApplication.Data\obj\Debug\netcoreapp2.1\ToDoListApplication.Data.csprojAssemblyReference.cache
